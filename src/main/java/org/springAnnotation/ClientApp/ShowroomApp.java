@@ -8,7 +8,7 @@ public class ShowroomApp {
 
 	public static void main(String[] args) {
 		
-		//lose couping using Qualier annoatation
+		//lose couping using Primary annoatation
 		AnnotationConfigApplicationContext cn=new AnnotationConfigApplicationContext(TestConfig.class);
 		Showroom sh=(Showroom) cn.getBean("sh");
 		sh.show();

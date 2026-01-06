@@ -8,8 +8,10 @@ import org.springframework.stereotype.Component;
 public class Showroom {
 	
 	@Autowired
-	@Qualifier("bike")  //jr apn use  nahi kel tr spring conatiner confused hoto konta
-						//bean use kraycha te
+	//by the default car cha ref bnvto karan apn Car chya varti primary use kela ahe
+	//ani jr apn qualifer use kela yethe tr qualier madhe aslela bean cha object bnel 
+	//kran primary jevha qualifer use krt nahi tevha default mhnun use krto
+//	@Qualifier("car")  ->car chi method run hoyl
 	Vehical vehical;
 	public void show()
 	{
